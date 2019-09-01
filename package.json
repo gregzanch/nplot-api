@@ -1,0 +1,38 @@
+{
+  "name": "nplot-api",
+  "version": "0.0.0",
+  "description": "nplot-api",
+  "license": "MIT",
+  "repository": "",
+  "author": {
+    "name": ""
+  },
+  "keywords": [
+    ""
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index",
+  "types": "lib/index",
+  "scripts": {
+    "clean": "rimraf lib && rimraf coverage",
+    "lint": "tslint --force --format verbose \"src/**/*.ts\"",
+    "build": "tsc --pretty",
+    "watch": "npm run build -- --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.11.4",
+    "coveralls": "^3.0.2",
+    "prettier": "^1.14.3",
+    "rimraf": "^2.6.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
