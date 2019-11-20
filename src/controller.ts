@@ -13,7 +13,7 @@ export class Controller {
     this.stream_buffersize = 1024;
   }
 
-  plot(data: PlotlyAPI.Data[], layout: PlotlyAPI.Layout, opts?: PlotlyAPI.Config) {
+  plot(data: PlotlyAPI.Data[]|PlotlyAPI.Data, layout: PlotlyAPI.Layout, opts?: PlotlyAPI.Config) {
     let default_opts: PlotlyAPI.Config = {
       responsive: true,
       editable: false,
@@ -23,7 +23,7 @@ export class Controller {
     this.readable.pipe(request.post(`http://0.0.0.0:${this.port}/nplot/`));
     splitEvery(
       JSON.stringify({
-        data,
+        data: data instanceof Array ? data : [data],
         layout,
         opts: Object.assign(default_opts, opts),
       }),

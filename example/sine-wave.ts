@@ -6,7 +6,9 @@ const f = 4;
 const ω = 2 * Math.PI * f;
 const sinewave = arraygen(L, t => Math.sin(ω * t / L))
 
-const plot = new nplot.Plot(45921);
+
+
+const plot = new nplot.Controller(45921);
 
 const data: nplot.PlotData = {
   y: sinewave

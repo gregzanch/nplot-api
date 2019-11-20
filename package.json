@@ -1,6 +1,6 @@
 {
   "name": "nplot-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "nplot-api",
   "license": "MIT",
   "repository": "",
@@ -22,6 +22,7 @@
     "watch": "npm run build -- --watch"
   },
   "dependencies": {
+    "@types/request": "^2.48.3",
     "request": "^2.88.0"
   },
   "devDependencies": {
