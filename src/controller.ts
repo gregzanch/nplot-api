@@ -3,7 +3,7 @@ import * as request from 'request';
 import { splitEvery } from './util';
 import * as PlotlyAPI from './plotly-api';
 
-export class Plot {
+export class Controller {
   private readable: Stream.Readable;
   public stream_buffersize: number;
   public port: number;

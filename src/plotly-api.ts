@@ -223,16 +223,16 @@ export interface Layout {
   hovermode?: 'closest' | 'x' | 'y' | false;
   hoverlabel?: Partial<HoverLabel>;
   calendar?: Calendar;
-  'xaxis.range'?: [Datum, Datum];
-  'xaxis.range[0]'?: Datum;
-  'xaxis.range[1]'?: Datum;
-  'yaxis.range'?: [Datum, Datum];
-  'yaxis.range[0]'?: Datum;
-  'yaxis.range[1]'?: Datum;
-  'yaxis.type'?: AxisType;
-  'xaxis.type'?: AxisType;
-  'xaxis.autorange'?: boolean;
-  'yaxis.autorange'?: boolean;
+  // 'xaxis.range'?: [Datum, Datum];
+  // 'xaxis.range[0]'?: Datum;
+  // 'xaxis.range[1]'?: Datum;
+  // 'yaxis.range'?: [Datum, Datum];
+  // 'yaxis.range[0]'?: Datum;
+  // 'yaxis.range[1]'?: Datum;
+  // 'yaxis.type'?: AxisType;
+  // 'xaxis.type'?: AxisType;
+  // 'xaxis.autorange'?: boolean;
+  // 'yaxis.autorange'?: boolean;
   ternary?: {}; // TODO
   geo?: {}; // TODO
   mapbox?: {}; // TODO
@@ -481,25 +481,25 @@ export interface PlotData {
   yaxis?: string;
   text?: string | string[];
   line?: Partial<ScatterLine>;
-  'line.color'?: Color;
-  'line.width'?: number;
-  'line.dash'?: Dash;
-  'line.shape'?: 'linear' | 'spline' | 'hv' | 'vh' | 'hvh' | 'vhv';
-  'line.smoothing'?: number;
-  'line.simplify'?: boolean;
+  // 'line.color'?: Color;
+  // 'line.width'?: number;
+  // 'line.dash'?: Dash;
+  // 'line.shape'?: 'linear' | 'spline' | 'hv' | 'vh' | 'hvh' | 'vhv';
+  // 'line.smoothing'?: number;
+  // 'line.simplify'?: boolean;
   marker?: Partial<PlotMarker>;
-  'marker.symbol'?: string | string[]; // Drawing.symbolList
-  'marker.color'?: Color;
-  'marker.opacity'?: number | number[];
-  'marker.size'?: number | number[];
-  'marker.maxdisplayed'?: number;
-  'marker.sizeref'?: number;
-  'marker.sizemax'?: number;
-  'marker.sizemin'?: number;
-  'marker.sizemode'?: 'diameter' | 'area';
-  'marker.showscale'?: boolean;
-  'marker.line'?: Partial<ScatterMarkerLine>;
-  'marker.colorbar'?: {}; // TODO
+  // 'marker.symbol'?: string | string[]; // Drawing.symbolList
+  // 'marker.color'?: Color;
+  // 'marker.opacity'?: number | number[];
+  // 'marker.size'?: number | number[];
+  // 'marker.maxdisplayed'?: number;
+  // 'marker.sizeref'?: number;
+  // 'marker.sizemax'?: number;
+  // 'marker.sizemin'?: number;
+  // 'marker.sizemode'?: 'diameter' | 'area';
+  // 'marker.showscale'?: boolean;
+  // 'marker.line'?: Partial<ScatterMarkerLine>;
+  // 'marker.colorbar'?: {}; // TODO
   mode?: 'lines' | 'markers' | 'text' | 'lines+markers' | 'text+markers' | 'text+lines' | 'text+lines+markers' | 'none';
   hoveron?: 'points' | 'fills';
   hoverinfo?: 'all' | 'name' | 'none' | 'skip' | 'text' |
